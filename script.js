@@ -8,7 +8,7 @@ async function sendRequest() {
     resultElement.style.display = 'none'; // Скрываем предыдущий результат
 
     try {
-        const response = await fetch('https://yourbackend.com/api/analysis', {
+        const response = await fetch('http://192.168.1.15:5000/api/analysis', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
