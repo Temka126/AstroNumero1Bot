@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Астрологический и нумерологический разбор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Астрологический и нумерологический разбор</h1>
+        <form id="analysisForm">
+            <input type="text" id="birthdate" placeholder="Дата рождения (ДД.ММ.ГГГГ)" required>
+            <input type="text" id="birthtime" placeholder="Время рождения (ЧЧ:ММ)">
+            <input type="text" id="birthplace" placeholder="Место рождения">
+            <select id="analysisType">
+                <option value="numerology">Нумерология</option>
+                <option value="astrology">Астрология</option>
+                <option value="compatibility">Совместимость</option>
+            </select>
+            <button type="button" onclick="sendRequest()">Получить расклад</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
